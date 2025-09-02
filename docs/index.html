@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI 다중 에이전트 시뮬레이터</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>AI Multi-Agent Simulator</h1>
+      <div class="controls">
+        <button id="play">재생</button>
+        <button id="pause">일시정지</button>
+        <input id="stepRange" type="range" min="0" max="0" value="0" />
+        <span id="stepLabel">Step: 0</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="left">
+        <canvas id="grid" width="600" height="600"></canvas>
+      </section>
+      <section class="right">
+        <div class="panel">
+          <h3>요약</h3>
+          <div id="summary"></div>
+        </div>
+        <div class="panel">
+          <h3>로그 (최근)</h3>
+          <pre id="log"></pre>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
