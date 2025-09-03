@@ -1,0 +1,2 @@
+# Minimal requirements for the MVP simulation (pure Python)
+
